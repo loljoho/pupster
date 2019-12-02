@@ -5,7 +5,11 @@ import {
   Route,
   Link
 } from 'react-router-dom';
+
+import About from './pages/About';
+
 import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
@@ -32,9 +36,7 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/about">
-            <h1>About</h1>
-          </Route>
+          <Route path="/about" component={About} />
           <Route path="/discover">
             <h1>Discover</h1>
           </Route>
