@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import DogCard from '../components/DogCard';
 import API from '../utils/API';
 
 class Discover extends Component {
@@ -28,7 +29,7 @@ class Discover extends Component {
     return (
       <>
         <h1>Discover Pupster!</h1>
-        <img src={this.state.image} />
+        <DogCard image={this.state.image} />
       </>
     );
   }
