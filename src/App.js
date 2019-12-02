@@ -8,6 +8,7 @@ import {
 
 import About from './pages/About';
 import Search from './pages/Search';
+import Discover from './pages/Discover';
 
 import logo from './logo.svg';
 
@@ -39,9 +40,7 @@ function App() {
         <Switch>
           <Route path="/about" component={About} />
           <Route path="/search" component={Search} />
-          <Route path="/discover">
-            <h1>Discover</h1>
-          </Route>
+          <Route path="/discover" component={Discover} />
           <Route path="/">
             <h1>Home</h1>
           </Route>
