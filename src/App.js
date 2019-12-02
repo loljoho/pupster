@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 
 import About from './pages/About';
+import Search from './pages/Search';
 
 import logo from './logo.svg';
 
@@ -25,10 +26,10 @@ function App() {
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/discover">Discover</Link>
+              <Link to="/search">Search</Link>
             </li>
             <li>
-              <Link to="/search">Search</Link>
+              <Link to="/discover">Discover</Link>
             </li>
           </ul>
         </nav>
@@ -37,11 +38,9 @@ function App() {
             renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/about" component={About} />
+          <Route path="/search" component={Search} />
           <Route path="/discover">
             <h1>Discover</h1>
-          </Route>
-          <Route path="/search">
-            <h1>Search</h1>
           </Route>
           <Route path="/">
             <h1>Home</h1>
