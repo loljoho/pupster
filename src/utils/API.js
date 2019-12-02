@@ -6,6 +6,10 @@ export default {
 
   getRandomDog: function() {
     return axios.get('https://dog.ceo/api/breeds/image/random');
+  },
+
+  getDogByBreed: function(dogBreed) {
+    return axios.get(`https://dog.ceo/api/breed/${dogBreed}/images`);
   }
 
 };
